@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+header {
+    font-family: "Quicksand", sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.bill {
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--bg);
+}
+.bill .box-bill {
+    border-radius: 10px;
+    width: 500px;
+    background-color: var(--bg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--bg);
+}
+.bill .box-bill .img-bill {
+    /* overflow: hidden; */
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+    background-color: white;
+}
+.bill .box-bill .img-bill img {
+    width: 35%;
+    height: 900%;
+    margin: auto;
+    object-fit: cover;
+}
+.bill .box-bill .footer {
+    margin-top: unset;
+}
+.bill .box-bill .bill-detail h5 {
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-size: 30px;
+    color: var(--main-color-text);
+    font-weight: 600;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding-bottom: 20px;
+}
+.bill .box-bill .bill-detail .product-detail {
+    margin-top: 20px;
+}
+.bill .box-bill .bill-detail .content-bill,
+.bill .box-bill .bill-detail .product-bill {
+    background-color: white;
+    color: var(--main-color-text);
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 20px 15px;
+}
+
+.bill .box-bill .bill-detail .product-bill {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.footer {
+    margin-top: unset;
+}
+.bill .box-bill .bill-detail ul li {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.bill .box-bill .bill-detail ul li span {
+    font-weight: 600;
+    font-size: 15px;
+}
+.bill .box-bill .bill-detail ul .names-product {
+    display: block;
+}
+.bill .box-bill .bill-detail ul .names-product span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: end;
+    color: var(--secondary-color);
+}
+.bill .box-bill .bill-detail .price-cart {
+    font-size: 18px;
+    color: red;
+}
+.bill .box-bill .bill-detail .transport {
+    color: forestgreen;
+    font-size: 18px;
+}
+.bill .box-bill .bill-detail .back-home {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    font-weight: 600;
+    height: 45px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+}
+.bill .box-bill .bill-detail .back-home:hover {
+    background-color: #adc700;
+}
+footer {
+    font-family: "Quicksand", sans-serif;
+}
+@media (max-width:526px) {
+    .bill .box-bill{
+        width: 400px;
+    }
+    .bill .box-bill .bill-detail ul .names-product span{
+        text-align: end;
+    }
+}
+@media (max-width:430px){
+    .bill .box-bill{
+        width: 300px;
+    }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ORFARM</title>
+        <link rel="icon" href="./img/icon/favico.png" type="image/png">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/blog.css" />
+    </head>
+    <body>
+        <header>
+            <div class="tab-menu position-fixed">
+                <ul class="d-flex">
+                    <li><i class="fa-solid fa-house"></i></li>
+                    <li class="bars"><i class="fa-solid fa-bars"></i></li>
+                    <li class="shopping-icon"><i class="fa-solid fa-basket-shopping"></i> <span>0</span></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+                </ul>
+            </div>
+            <div class="menu-res position-fixed">
+                <div class="close">Close</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="shop">
+                        <p class="d-flex align-items-center justify-content-between"><span>Shop</span> <i class="fa-solid fa-caret-down"></i></p>
+                    </li>
+                    <ul class="menu-tab">
+                        <li><a href="shop.html"> Fresh Meat </a></li>
+                        <li><a href="shop.html">Fresh Fish</a></li>
+                        <li><a href="shop.html">Fresh Vegetables</a></li>
+                        <li><a href="shop.html">Fruit</a></li>
+                        <li><a href="shop.html">Beverage</a></li>
+                    </ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="attention">
+                <p><i class="fa-solid fa-check"></i><span></span></p>
+            </div>
+            <div class="bg"></div>
+            <div class="log-in">
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <div class="login">
+                    <h4>SIGN IN</h4>
+                    <form>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" placeholder="Email" />
+                            <span></span>
+                        </div>
+                        <div class="pass">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" />
+                            <span></span>
+                        </div>
+                        <p>Forgot Your Password?</p>
+                        <div class="sign" onclick="sign()">SIGN IN</div>
+                        <a class="checkout" href="register.html">CREATE AN ACCOUNT</a>
+                    </form>
+                </div>
+            </div>
+            <div class="nabar">
+                <div class="nabar-items">
+                    <h4>YOUR CART</h4>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="nabar-list"></div>
+                <div class="pay-price">
+                    <div class="price-content d-flex justify-content-between">
+                        <h5>SUBTOTAL:</h5>
+                        <h5><span>$</span><span class="price-product">1,100.00</span></h5>
+                    </div>
+                    <div class="btn-button">
+                        <button onclick="checkout()">CHECK OUT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="head">
+                    <div class="bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/logo/Logo.png" alt="" />
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="shop">
+                            <a href="shop.html">Shop</a>
+                            <ul class="menu-tab">
+                                <li><a href="shop.html"> Fresh Meat </a></li>
+                                <li><a href="shop.html">Fresh Fish</a></li>
+                                <li><a href="shop.html">Fresh Vegetables</a></li>
+                                <li><a href="shop.html">Fruit</a></li>
+                                <li><a href="shop.html">Beverage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                    <ul class="icon">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li onclick="user()" class="user">
+                            <p class="avatar"><i class="fa-regular fa-user"></i></p>
+
+                            <div class="log-out">
+                                <p>MY ACCOUNT</p>
+                                <p>ORDER INFORMATION</p>
+                                <p onclick="out()">LOG OUT</p>
+                            </div>
+                        </li>
+                        <li class="shopping-icon"><i class="fa-solid fa-basket-shopping"></i> <span>0</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="blog-main">
+                <div class="blog">
+                    <div class="link-blog">
+                        <p>Home / Blog / <span>Perfect Quality Reasonable Price For Your Family</span></p>
+                    </div>
+                    <div class="blog-banner">
+                        <div class="image-blog">
+                            <img src="./img/banner/blog1-min.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="content-text">
+                                <h6 class="d-flex gap-2 align-items-center">
+                                    LIFE STYLE <i class="fa-solid fa-circle"></i> TONY JOHAN <i class="fa-solid fa-circle"></i> JAN 03. 2023
+                                    <i class="fa-solid fa-circle"></i> COMMENT (1)
+                                </h6>
+                                <h3>Perfect Quality Reasonable Price For Your Family</h3>
+                                <div class="text-one">
+                                    These are the people who make your life easier. Large tiles were arranged on the counter top plate near the window
+                                    of the living room, they were connected to the kitchen. The perfect way to enjoy brewing tea on low hanging fruit
+                                    to identify. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. <br />
+                                    Large tiles were arranged on the counter top plate near the window of the living room, they were connected to the
+                                    kitchen counter through the opening in the existing building wall. For me, the most important part of improving at
+                                    photography has been sharing it. Sign up for an Exposure account, or post regularly to Tumblr, or both. Tell
+                                    people you’re trying to get better at photography.<br />
+                                    <br />
+                                    <i
+                                        >“ The disk at the bottom of the bowl can be turned counterclockwise to drain water when washing vegetables
+                                        and it can be turned. ”</i
+                                    >
+                                    <br />
+
+                                    Form is an armless modern with a minimalistic expression. With a simple and contemporary design form Foody has a
+                                    soft and welcoming silhouette and a distinctly residential look. The legs appear almost as if they are growing out
+                                    of the shell. This gives the design flexibility and makes it possible to vary the frame. Unika is a mouth blown an
+                                    series of small, glass pendant lamps, originally designed for the restaurant.
+                                    <div class="image-list">
+                                        <ul class="d-flex">
+                                            <li><img src="./img/banner/blog1-300x185_1.png" alt="" /></li>
+                                            <li><img src="./img/banner/blog2-300x185_1.png" alt="" /></li>
+                                            <li><img src="./img/banner/blog3_4.png" alt="" /></li>
+                                        </ul>
+                                    </div>
+                                    <br />
+                                    Staying locked up in four walls have restricted our thinking. I feel like our limited thinking echoes through this
+                                    wall. We are so used to schedules and predictable life that we have successfully suppressed our creative side.
+                                    When you step out of these four walls on a peaceful morning, you realize how much nature has to offer to you. Its
+                                    boundless. Your thoughts, worries, deadlines won’t resonate here.
+                                    <br />
+                                    <br />
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                                    ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                    sequi nesciunt. They’ll come on photo walks with you.
+
+                                    <div class="tag">
+                                        <ul class="d-flex gap-3 align-items-center">
+                                            <li>TAGGED:</li>
+                                            <li>fresh</li>
+                                            <li>cooking</li>
+                                            <li>seafoods</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="comment">
+                                        <h5>Leave a reply</h5>
+                                        <p>Your email address will not be published. Required fields are marked</p>
+                                        <div class="box-comment">
+                                            <!-- <div class="info-comment">
+                                                <h6>Zoe Pack</h6>
+                                                <h6>MAY 19, 2021 04:43</h6>
+                                            </div>
+                                            <p class="content-comment">
+                                                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie
+                                                malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus.
+                                                Nulla porttitor accumsan tincidunt.
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="post-comment">
+                                        <input type="text" placeholder="Your Name" />
+                                        <input type="email" placeholder="Email" />
+                                        <textarea cols="30" rows="10" placeholder="Add a rebly..."></textarea>
+                                        <button onclick="postComment(event)">POST COMMENT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box box-media">
+                                <h4>LET US HELP YOU</h4>
+                                <p>If you have any question, please contact us at: <span class="email">support@example.com</span></p>
+                                <p>Social Media:</p>
+                                <ul class="icon d-flex">
+                                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i class="fa-brands fa-twitter"></i></li>
+                                    <li><i class="fa-brands fa-instagram"></i></li>
+                                    <li><i class="fa-brands fa-youtube"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box box-time">
+                                <h4>LOOKING FOR ORFARM?</h4>
+                                <p>68 St. Vicent Place, Glasgow, Greater Newyork NH2012, UK</p>
+                                <p>Monday – Friday: <span class="time">8:10 AM – 6:10 PM</span></p>
+                                <p>Saturday: <span class="time">10:10 AM – 06:10 PM</span></p>
+                                <p>Sunday: <span class="time">Close</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box">
+                                <h4>HOT CATEGORIES</h4>
+                                <ul class="list">
+                                    <li>Fruits & Vegetables</li>
+                                    <li>Dairy Products</li>
+                                    <li>Package Foods</li>
+                                    <li>Beverage</li>
+                                    <li>Health & Wellness</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box">
+                                <h4>OUR NEWSLETTER</h4>
+                                <p class="content">Subscribe to the Orfarm mailing list to receive updates on new arrivals & other information.</p>
+                                <div class="search">
+                                    <input type="email" placeholder="Your email address..." />
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/blog.js"></script>
+    </body>
+</html>

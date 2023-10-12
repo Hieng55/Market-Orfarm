@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ORFARM</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="icon" href="./img/icon/favico.png" type="image/png">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/detail.css" />
+    </head>
+    <body>
+        <header>
+            <div class="tab-menu position-fixed">
+                <ul class="d-flex">
+                    <li><i class="fa-solid fa-house"></i></li>
+                    <li class="bars"><i class="fa-solid fa-bars"></i></li>
+                    <li class="shopping-icon"><i class="fa-solid fa-basket-shopping"></i> <span>0</span></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+                </ul>
+            </div>
+            <div class="menu-res position-fixed">
+                <div class="close">Close</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="shop">
+                        <p class="d-flex align-items-center justify-content-between"><span>Shop</span> <i class="fa-solid fa-caret-down"></i></p>
+                    </li>
+                    <ul class="menu-tab">
+                        <li><a href="shop.html"> Fresh Meat </a></li>
+                        <li><a href="shop.html">Fresh Fish</a></li>
+                        <li><a href="shop.html">Fresh Vegetables</a></li>
+                        <li><a href="shop.html">Fruit</a></li>
+                        <li><a href="shop.html">Beverage</a></li>
+                    </ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="attention">
+                <p><i class="fa-solid fa-check"></i><span></span></p>
+            </div>
+            <div class="bg"></div>
+            <div class="log-in">
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <div class="login">
+                    <h4>SIGN IN</h4>
+                    <form>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" placeholder="Email" />
+                            <span></span>
+                        </div>
+                        <div class="pass">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" />
+                            <span></span>
+                        </div>
+                        <p>Forgot Your Password?</p>
+                        <div class="sign" onclick="sign()">SIGN IN</div>
+                        <a class="checkout" href="register.html">CREATE AN ACCOUNT</a>
+                    </form>
+                </div>
+            </div>
+            <div class="nabar">
+                <div class="nabar-items">
+                    <h4>YOUR CART</h4>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="nabar-list"></div>
+                <div class="pay-price">
+                    <div class="price-content d-flex justify-content-between">
+                        <h5>SUBTOTAL:</h5>
+                        <h5><span>$</span><span class="price-product">1,100.00</span></h5>
+                    </div>
+                    <div class="btn-button">
+                        <button onclick="checkout()">CHECK OUT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="head">
+                    <div class="bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/logo/Logo.png" alt="" />
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="shop">
+                            <a href="shop.html">Shop</a>
+                            <ul class="menu-tab">
+                                <li><a href="shop.html"> Fresh Meat </a></li>
+                                <li><a href="shop.html">Fresh Fish</a></li>
+                                <li><a href="shop.html">Fresh Vegetables</a></li>
+                                <li><a href="shop.html">Fruit</a></li>
+                                <li><a href="shop.html">Beverage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                    <ul class="icon">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li onclick="user()" class="user">
+                            <p class="avatar"><i class="fa-regular fa-user"></i></p>
+
+                            <div class="log-out">
+                                <p>MY ACCOUNT</p>
+                                <p>ORDER INFORMATION</p>
+                                <p onclick="out()">LOG OUT</p>
+                            </div>
+                        </li>
+                        <li class="shopping-icon"><i class="fa-solid fa-basket-shopping"></i> <span>0</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="detail-cart">
+                <div class="detail-link">
+                    <p><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span>Fresh Mangosteen 90% Organic From VietNamese</span></p>
+                </div>
+                <div class="group-boxs d-flex">
+                    <div class="double-detail">
+                        <div class="cart-detail-group">
+                            <div class="pay-detail"></div>
+                        </div>
+                        <div class="content-detail">
+                            <ul class="nav nav-tabs justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#home"> Product Description </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#menu1"> Addition Information </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#menu2"> Custom Tab </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane container active" id="home">
+                                    <div class="row" id="products-list-1">
+                                        <p>
+                                            Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced
+                                            since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese
+                                            armchairs. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia eserunt mollit anim
+                                            id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                            laudantium, totam rem aperiam, aque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                                            dicta sunt explicabo.
+                                        </p>
+                                        <div class="text d-flex gap-3">
+                                            <div class="text-left post">
+                                                <h5>PRODUCT DETAILS</h5>
+                                                <ul>
+                                                    <li>Material: Plastic, Wood</li>
+                                                    <li>Legs: Lacquered oak and black-painted oak</li>
+                                                    <li>Dimensions and Weight: Height: 80 cm, Weight: 5.3 kg</li>
+                                                    <li>Length: 48cm</li>
+                                                    <li>Depth: 52 cm</li>
+                                                    <li>
+                                                        Lemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="text-right post">
+                                                <div class="img">
+                                                    <img src="/img/banner/img.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-blog">
+                                            <h5>PRODUCT BRAND</h5>
+                                            <p>
+                                                The form is an armless modern chair with a minimalistic expression. With a simple and contemporary
+                                                design Form Chair has a soft and welcoming silhouette and a distinctly residential look. The legs
+                                                appear almost as if they are growing out of the shell. This gives the design flexibility and makes it
+                                                possible to vary the frame. Unika is a mouth-blown series of small, glass pendant lamps, originally
+                                                designed for Restaurant Gronbech. Est eum itaque maiores qui blanditiis architecto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container fade" id="menu1">
+                                    <div class="row" id="products-list-2">
+                                        <ul class="table">
+                                            <li>
+                                                <p class="at">Manufacturer</p>
+                                                <p class="at">Color</p>
+                                            </li>
+                                            <li>
+                                                <i>Vivamus suscipit</i>
+                                                <p>Black</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container fade" id="menu2">
+                                    <div class="row" id="products-list-3">
+                                        <div class="tab">
+                                            <h5>VENDOR INFO</h5>
+                                            <ul>
+                                                <li>Store Name: Cosmetic</li>
+                                                <li>Vendor: Edgar Andrew</li>
+                                                <li>Address: NewYork, NewYork, NY, 12345</li>
+                                            </ul>
+                                            <p>
+                                                Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan
+                                                tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero
+                                                malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada.
+                                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id
+                                                imperdiet et, porttitor at sem. Sed porttitor lectus nibh.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-right">
+                        <div class="box-check">
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="img">
+                                        <img src="/img/icon/icon-box.png" alt="" />
+                                    </div>
+                                    <p>
+                                        Free shipping applies to <br />
+                                        all orders over $90
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="img">
+                                        <img src="/img/icon/icon-check.png" alt="" />
+                                    </div>
+                                    <p>
+                                        Guaranteed 100% Organic <br />
+                                        from nature farms
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="img">
+                                        <img src="/img/icon/icon-check-2.png" alt="" />
+                                    </div>
+                                    <p>
+                                        60 days return if you change <br />
+                                        your mind
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-deals">
+                            <img src="/img/banner/Banner-sidebar.png" alt="" />
+                        </div>
+                        <div class="product-recent">
+                            <h4>Recent Products</h4>
+                            <div class="cart">
+                                <div class="img">
+                                    <img src="/img/product/product-2.jpg" alt="" />
+                                </div>
+                                <p>Fresh Fruits</p>
+                                <h6>Guava Leaves From Trees Grown in South</h6>
+                                <h5>$600.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box box-media">
+                                <h4>LET US HELP YOU</h4>
+                                <p>If you have any question, please contact us at: <span class="email">support@example.com</span></p>
+                                <p>Social Media:</p>
+                                <ul class="icon d-flex">
+                                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i class="fa-brands fa-twitter"></i></li>
+                                    <li><i class="fa-brands fa-instagram"></i></li>
+                                    <li><i class="fa-brands fa-youtube"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box box-time">
+                                <h4>LOOKING FOR ORFARM?</h4>
+                                <p>68 St. Vicent Place, Glasgow, Greater Newyork NH2012, UK</p>
+                                <p>Monday – Friday: <span class="time">8:10 AM – 6:10 PM</span></p>
+                                <p>Saturday: <span class="time">10:10 AM – 06:10 PM</span></p>
+                                <p>Sunday: <span class="time">Close</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box">
+                                <h4>HOT CATEGORIES</h4>
+                                <ul class="list">
+                                    <li>Fruits & Vegetables</li>
+                                    <li>Dairy Products</li>
+                                    <li>Package Foods</li>
+                                    <li>Beverage</li>
+                                    <li>Health & Wellness</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box">
+                                <h4>OUR NEWSLETTER</h4>
+                                <p class="content">Subscribe to the Orfarm mailing list to receive updates on new arrivals & other information.</p>
+                                <div class="search">
+                                    <input type="email" placeholder="Your email address..." />
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/detail.js"></script>
+    </body>
+</html>

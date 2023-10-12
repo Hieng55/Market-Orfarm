@@ -1,0 +1,646 @@
+@import url(main.css);
+.container-box {
+    margin-top: 80px;
+}
+.container-box .group {
+    display: flex;
+    justify-content: center;
+}
+.container-box .group .box p {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(6, 0, 128);
+    font-weight: 500;
+}
+.container-box .box-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+.container-box .box-content .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 50px;
+}
+.container-box .box-content .content .item-center {
+    display: flex;
+    justify-content: center;
+}
+.container-box .box-content .content .icon {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+.container-box .box-content .content .icon {
+    object-fit: cover;
+}
+.container-box .box-content .content .item strong {
+    color: rgb(6, 0, 128);
+}
+.container-box .box-content .content .item p {
+    color: rgb(6, 0, 128);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.container-box .our-product .group-product {
+    text-align: center;
+}
+.container-box .our-product {
+    margin-top: 70px;
+}
+.container-box .our-product .group-product h5 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: rgb(63, 163, 0);
+    font-weight: 500;
+}
+.container-box .our-product .group-product h3 {
+    font-size: 30px;
+    color: rgb(6, 0, 128);
+}
+.nav-tabs {
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+    border: none;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+}
+.card-product {
+    background-color: #f7f7f9;
+    border: 1px solid #5e5d8e24;
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+.card-product .thumb {
+    position: relative;
+}
+.card-product .sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ea0d42;
+    background-color: #facfd4;
+    padding: 3px 9px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.card-product .content {
+    padding: 15px;
+}
+.card-product .cate {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.card-product .title {
+    font-size: 15px;
+    color: var(--primary-color);
+}
+.card-product .star {
+    font-size: 10px;
+    color: #fc0;
+}
+.card-product .price {
+    margin-top: 15px;
+}
+.card-product .price span:first-child {
+    color: #ea0d42;
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-product .price span:last-child {
+    color: #bebebe;
+    font-size: 13px;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.card-product .info {
+    position: absolute;
+    height: 100%;
+    bottom: -10px;
+    border-radius: 0px;
+    background-color: #f7f7f9e6;
+    width: 100%;
+    border: 1px solid #5e5d8e24;
+    padding: 20px 20px 0;
+    border-top: none;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-product:hover .info {
+    box-shadow: 0px 10px 30px rgb(61 110 168 / 10%);
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+}
+.card-product .info .btn-box:hover {
+    background-color: #2d2a6e;
+}
+.card-product .info ul {
+    font-size: 12px;
+    color: var(--primary-color);
+    margin: 10px;
+}
+.product {
+    margin: 30px 0;
+}
+.text-link {
+    color: #2d2a6e;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.text-link a {
+    color: rgb(0, 207, 0);
+    cursor: pointer;
+}
+.container-box .banner-fresh {
+    height: 90vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin-top: 70px;
+    padding: 0 30px;
+    background-image: url(/img/banner/banner-1.png);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.container-box .banner-fresh .banner-fresh-drinks {
+    color: white;
+}
+.container-box .banner-fresh .banner-fresh-drinks h4 {
+    font-size: 15px;
+}
+.container-box .banner-fresh .banner-fresh-drinks h2 {
+    margin: 30px 0;
+    font-size: 38px;
+    font-weight: 700;
+}
+.container-box .banner-fresh .banner-fresh-drinks p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.container-box .banner-fresh .banner-fresh-drinks button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-weight: 700;
+    font-size: 13px;
+    color: #96ae00;
+    border-radius: 30px;
+    transition: 0.5s;
+    outline: none;
+}
+.container-box .banner-fresh .banner-fresh-drinks button:hover {
+    background-color: #65a648;
+    border: 3px solid white;
+    color: white;
+}
+.container-box .banner-fresh .banner-fresh-drinks .btn-shop {
+    display: flex;
+    gap: 15px;
+}
+.container-box .banner-fresh .img {
+    overflow: hidden;
+}
+.container-box .banner-fresh .img-3 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.list-products .products-tab {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+}
+.list-products .products-tab .tab {
+    width: 32%;
+    border: 1px solid rgb(212, 212, 212);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 1 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.list-products .products-tab .tab .img {
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+}
+.list-products .products-tab .tab p {
+    font-size: 12px;
+    color: #534f9f;
+    font-weight: 500;
+}
+.list-products .products-tab .tab h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+    color: #2d2a6e;
+}
+.list-products .products-tab .tab h4 {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+.list-products .text-head {
+    text-align: center;
+    margin-top: 70px;
+}
+.list-products .text-head h4 {
+    font-size: 15px;
+}
+.list-products .text-head h2 {
+    color: #2d2a6e;
+    margin: 20px 0;
+    font-weight: 600;
+}
+.double-banner {
+    margin-top: 80px;
+}
+.double-banner .box-banner {
+    display: flex;
+    /* height: 350px; */
+}
+
+.double-banner .box-banner .left-banner,
+.double-banner .box-banner .right-banner {
+    position: relative;
+}
+
+.double-banner .box-banner .left-banner .content,
+.double-banner .box-banner .right-banner .content {
+    position: absolute;
+    padding-left: 20px;
+}
+.double-banner .box-banner .tip {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.double-banner .box-banner .tip .left-image {
+    overflow: hidden;
+    width: 100%;
+    /* height: 400px; */
+}
+.double-banner .box-banner .tip .left-image img {
+    width: 100%;
+    height: 100%;
+}
+.double-banner .box-banner .tip h3 {
+    margin: 20px 0;
+}
+.double-banner .box-banner .tip h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.double-banner .box-banner .left-banner h6 {
+    color: red;
+}
+.double-banner .box-banner .right-banner h6 {
+    color: rgb(255, 200, 0);
+}
+.double-banner .box-banner .tip h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+}
+.double-banner .box-banner .tip button {
+    width: 180px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d2a6e;
+    transition: 0.5s;
+}
+.double-banner .box-banner .tip button:hover {
+    background-color: #2d2a6e;
+    color: white;
+}
+.blog {
+    margin-top: 90px;
+    padding-bottom: 20px;
+}
+.blog .blog-text h5 {
+    font-size: 15px;
+    color: #65a648;
+}
+.blog .blog-text h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #2d2a6e;
+    margin: 15px 0;
+}
+.blog .blog-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.blog .blog-list .blog-item {
+    width: 23%;
+}
+.blog .blog-list .blog-item .image {
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.blog .blog-list .blog-item .image img {
+    transition: 0.5s;
+}
+.blog .blog-list .blog-item:hover .image img {
+    transform: scale(1.1);
+}
+.blog .blog-list .blog-item .text-1 {
+    color: #2d2a6e;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+}
+.blog .blog-list .blog-item .text-1 span:first-child {
+    color: #96ae00;
+}
+.blog .blog-list .blog-item .text-content {
+    color: #2d2a6e;
+    font-size: 18px;
+    font-weight: 700;
+}
+.blog .blog-list .blog-item .text {
+    color: #2d2a6e;
+    font-weight: 600;
+    font-size: 14px;
+}
+.blog .blog-list .blog-item h6 {
+    color: #96ae00;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.blog .blog-list .blog-item p {
+    margin-bottom: 10px;
+}
+.blog .blog-head-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d2a6e;
+}
+@media (max-width: 1169px) {
+    .header .banner {
+        height: unset;
+    }
+}
+@media (max-width: 1200px) {
+    .card-product .info .btn-box {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1147px) {
+    .header .banner .content h4 {
+        font-size: 15px;
+    }
+    .header .banner .content h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 1090px) {
+    .header .banner {
+        margin-top: 50px;
+    }
+    .header .banner .content h1 {
+        margin: 15px 0;
+    }
+    .header .banner .content button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .container-box .banner-fresh .img {
+        display: none;
+    }
+    .double-banner .box-banner .tip h3 {
+        font-size: 30px;
+    }
+    .double-banner .box-banner .tip button {
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .blog .blog-list .blog-item {
+        width: 48%;
+    }
+}
+@media (max-width: 895px) {
+    .header .banner .content h4 {
+        font-size: 13px;
+    }
+    .header .banner .content h1 {
+        font-size: 35px;
+    }
+    .header .banner .content button {
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .header .banner .content p {
+        font-size: 13px;
+    }
+    .group .box .image {
+        width: 80%;
+        margin: auto;
+    }
+    .container-box .box-content .item-arrow,
+    .container-box .box-content .item-arrow img {
+        display: none;
+    }
+    .container-box .box-content .content {
+        gap: 20px;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks h2 {
+        font-size: 30px;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks p {
+        font-size: 13px;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks .btn-shop {
+        display: block;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks .btn-shop button {
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .list-products .products-tab .tab {
+        width: 48%;
+    }
+    .double-banner .box-banner .tip .left-image {
+        height: 300px;
+    }
+    .double-banner .box-banner .tip h3 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 795px) {
+    .header .banner .content p {
+        margin-bottom: 20px;
+    }
+    .container-box .box-content .content {
+        flex-wrap: wrap;
+    }
+    .double-banner .box-banner .tip {
+        width: 100%;
+    }
+    .double-banner .box-banner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-box .banner-fresh {
+        height: 70vh;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks h2 {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 683px) {
+    .header .banner .content p {
+        display: none;
+    }
+    .header .banner {
+        margin-top: 70px;
+    }
+    .container-box .banner-fresh {
+        height: 50vh;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks p {
+        display: none;
+    }
+    .list-products .products-tab .tab {
+        width: 80%;
+    }
+    .blog .blog-list {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 676px) {
+    .blog .blog-list .blog-item {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    .blog .blog-list {
+        padding: unset;
+    }
+}
+@media (max-width: 510px) {
+    .header .banner .content h1 {
+        font-size: 30px;
+    }
+    .header .banner .content button {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .container-box .banner-fresh {
+        height: 40vh;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks h2 {
+        font-size: 20px;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks .btn-shop button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .list-products .products-tab .tab {
+        display: block;
+    }
+    .list-products .products-tab .tab .img {
+        margin: auto;
+    }
+    .list-products .products-tab .tab .text-tab {
+        background-color: rgb(235, 235, 235);
+        text-align: center;
+        padding: 10px 0;
+    }
+    .double-banner .box-banner .tip .left-image {
+        height: 250px;
+    }
+}
+@media (max-width: 432px) {
+    .header .banner .content h4 {
+        font-size: 11px;
+    }
+    .header .banner .content h1 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .header .banner .content button {
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .group .box .image {
+        width: 60%;
+    }
+    .container-box .group .box p {
+        font-size: 12px;
+    }
+    .container-box .our-product {
+        margin-top: 40px;
+    }
+    .container-box .banner-fresh {
+        height: 35vh;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks h4 {
+        font-size: 12px;
+    }
+    .container-box .banner-fresh .banner-fresh-drinks h2 {
+        margin: 15px 0;
+    }
+    .list-products .products-tab .tab {
+        width: 95%;
+    }
+    .double-banner .box-banner .tip .left-image {
+        height: 200px;
+    }
+    .double-banner .box-banner .tip button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 344px) {
+    .fresh-list {
+        width: 70%;
+        margin: auto;
+    }
+}
