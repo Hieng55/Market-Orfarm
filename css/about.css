@@ -3,7 +3,7 @@
     margin-top: 50px;
 }
 .main-about .header-about {
-    background-image: url(/img/banner/bg-about_1.png);
+    background-image: url(./img/banner/bg-about_1.png);
     color: white;
     position: relative;
     height: 100vh;
