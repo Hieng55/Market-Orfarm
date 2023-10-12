@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ORFARM</title>
-        <link rel="icon" href="./img/icon/favico.png" type="image/png">
+        <link rel="icon" href="./img/icon/favico.png" type="image/png" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -28,22 +28,22 @@
             </div>
             <div class="menu-res position-fixed">
                 <div class="close">Close</div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="shop">
+                <div class="menu-link">
+                    <a class="link" href="index.html">Home</a>
+                    <div class="shop">
                         <p class="d-flex align-items-center justify-content-between"><span>Shop</span> <i class="fa-solid fa-caret-down"></i></p>
-                    </li>
-                    <ul class="menu-tab">
-                        <li><a href="shop.html"> Fresh Meat </a></li>
-                        <li><a href="shop.html">Fresh Fish</a></li>
-                        <li><a href="shop.html">Fresh Vegetables</a></li>
-                        <li><a href="shop.html">Fruit</a></li>
-                        <li><a href="shop.html">Beverage</a></li>
-                    </ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+                        <div class="menu-tab">
+                            <a href="shop.html"> Fresh Meat </a>
+                            <a href="shop.html">Fresh Fish</a>
+                            <a href="shop.html">Fresh Vegetables</a>
+                            <a href="shop.html">Fruit</a>
+                            <a href="shop.html">Beverage</a>
+                        </div>
+                        <a class="link" href="blog.html">Blog</a>
+                        <a class="link" href="about.html">About Us</a>
+                        <a class="link" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
             </div>
             <div class="attention">
                 <p><i class="fa-solid fa-check"></i><span></span></p>
@@ -67,7 +67,7 @@
                         </div>
                         <p>Forgot Your Password?</p>
                         <div class="sign" onclick="sign()">SIGN IN</div>
-                        <a class="checkout" href="register.html">CREATE AN ACCOUNT</a>
+                        <a class="checkout-btn" href="register.html">CREATE AN ACCOUNT</a>
                     </form>
                 </div>
             </div>

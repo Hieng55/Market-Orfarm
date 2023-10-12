@@ -42,15 +42,15 @@ ul li {
 }
 
 ::-webkit-scrollbar {
-    width: 5px; 
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #009b05; 
+    background-color: #009b05;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
 }
 
 .attention {
@@ -134,32 +134,7 @@ ul li {
     left: 0;
     visibility: visible;
 }
-.menu-res ul li {
-    border-bottom: 1px solid white;
-    height: 50px;
-    line-height: 50px;
-    cursor: pointer;
-}
-.menu-res ul .menu-tab {
-    display: none;
-}
-.menu-res ul .menu-tab li {
-    padding-left: 20px;
-}
-.menu-res ul .shop p {
-    padding: 0 20px;
-    color: white;
-}
-.menu-res ul .shop p i {
-    transition: 0.5s;
-}
-.menu-res ul .shop p i.active {
-    transform: rotate(180deg);
-}
-.menu-res ul li a {
-    color: white;
-    padding-left: 20px;
-}
+
 .menu-res .close {
     background-color: #96ae00;
     color: white;
@@ -169,6 +144,32 @@ ul li {
     width: 100%;
     line-height: 40px;
     cursor: pointer;
+}
+.menu-res .menu-link {
+    color: white;
+}
+.menu-res .menu-link .link {
+    border-bottom: 1px solid white;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+}
+.menu-res .menu-link .shop p {
+    border-bottom: 1px solid white;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.menu-res .menu-link .shop p i {
+    transition: 0.5s;
+}
+.menu-res .menu-link .shop p i.active {
+    transform: rotate(180deg);
+}
+.menu-res .menu-link .shop .menu-tab a {
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: white;
+    padding: 15px 40px;
 }
 .nabar {
     height: 100vh;
@@ -182,9 +183,8 @@ ul li {
     visibility: hidden;
     transition: 0.5s;
     overflow: auto;
-    
 }
-.nabar::-webkit-scrollbar{
+.nabar::-webkit-scrollbar {
     width: 0;
 }
 .nabar.active {
@@ -657,7 +657,8 @@ ul li {
     color: #96ae00;
 }
 .log-in form .sign,
-.log-in form .checkout {
+.log-in form .checkout,
+.log-in form .checkout-btn {
     display: block;
     margin: 15px auto;
     width: 220px;

@@ -2,7 +2,7 @@
     padding: 50px 20px;
 }
 .checkout {
-    background-image: url(./img/banner/checkout.png);
+    background-image: url(https://m2.alothemes.com/orfarm/media/wysiwyg/banner-category-page.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
@@ -296,15 +296,15 @@
     .checkout-main .box .order ul li span:last-child {
         font-size: 14px;
     }
-    .checkout-main .box .order ul li:nth-last-child(2) span:last-child{
+    .checkout-main .box .order ul li:nth-last-child(2) span:last-child {
         font-size: 15px;
     }
-    .checkout-main .box .order .code-dis button{
+    .checkout-main .box .order .code-dis button {
         width: 120px;
         height: 30px;
         font-size: 11px;
     }
-    .checkout-main .box .order .sub{
+    .checkout-main .box .order .sub {
         height: 40px;
         font-size: 12px;
     }
