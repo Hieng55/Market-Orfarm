@@ -198,7 +198,7 @@ const dataProduct = [
         price: "80.00",
         priceInner: "80",
         quantity: 1,
-        image: "img/product/product-12.jpg.jpg",
+        image: "img/product/product-5.jpg",
     },
     {
         id: 20,
@@ -207,7 +207,7 @@ const dataProduct = [
         price: "60.00",
         quantity: 1,
         priceInner: "60",
-        image: "img/product/product-6.jpg.jpg",
+        image: "img/product/product-6.jpg",
     },
     {
         id: 21,
@@ -216,7 +216,7 @@ const dataProduct = [
         price: "200.00",
         priceInner: "200",
         quantity: 1,
-        image: "img/product/product-7.jpg",
+        image: "img/product/product-8.jpg",
     },
 ];
 const shop = [
