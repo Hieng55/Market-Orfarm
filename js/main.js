@@ -144,7 +144,7 @@ const dataProduct = [
         price: "600.00",
         priceInner: "600",
         quantity: 1,
-        image: "/img/product/7_8.jpg",
+        image: "img/product/product-11.jpg",
     },
     {
         id: 14,
@@ -153,7 +153,7 @@ const dataProduct = [
         price: "300.00",
         priceInner: "300",
         quantity: 1,
-        image: "/img/product/8_1_3.jpg",
+        image: "img/product/product-1.jpg",
     },
     {
         id: 15,
@@ -162,7 +162,7 @@ const dataProduct = [
         price: "100.00",
         priceInner: "100",
         quantity: 1,
-        image: "/img/product/9_1_5.jpg",
+        image: "img/product/product-2.jpg",
     },
     {
         id: 16,
@@ -171,7 +171,7 @@ const dataProduct = [
         price: "90.00",
         priceInner: "90",
         quantity: 1,
-        image: "/img/product/9_2_4.jpg",
+        image: "img/product/product-3.jpg",
     },
     {
         id: 17,
@@ -180,7 +180,7 @@ const dataProduct = [
         price: "50.00",
         priceInner: "50",
         quantity: 1,
-        image: "/img/product/9_3_3.jpg",
+        image: "img/product/product-4.jpg",
     },
     {
         id: 18,
@@ -189,7 +189,7 @@ const dataProduct = [
         price: "10.00",
         priceInner: "10",
         quantity: 1,
-        image: "/img/product/10_1_8.jpg",
+        image: "img/product/product-5.jpg",
     },
     {
         id: 19,
@@ -198,7 +198,7 @@ const dataProduct = [
         price: "80.00",
         priceInner: "80",
         quantity: 1,
-        image: "/img/product/20.jpg",
+        image: "img/product/product-12.jpg.jpg",
     },
     {
         id: 20,
@@ -207,7 +207,7 @@ const dataProduct = [
         price: "60.00",
         quantity: 1,
         priceInner: "60",
-        image: "/img/product/17.jpg",
+        image: "img/product/product-6.jpg.jpg",
     },
     {
         id: 21,
@@ -216,7 +216,7 @@ const dataProduct = [
         price: "200.00",
         priceInner: "200",
         quantity: 1,
-        image: "/img/product/19.jpg",
+        image: "img/product/product-7.jpg",
     },
 ];
 const shop = [
