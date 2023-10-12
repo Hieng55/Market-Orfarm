@@ -38,8 +38,8 @@ function renderDetail(data) {
 </div>
 <ul class="list-image">
     <li class="active img"><img src="${data.image}" alt="" /></li>
-    <li><img src="/img/product/product-2.jpg" alt="" /></li>
-    <li><img src="/img/product/product-3.jpg" alt="" /></li>
+    <li><img src="./img/product/product-2.jpg" alt="" /></li>
+    <li><img src="./img/product/product-3.jpg" alt="" /></li>
 </ul>
     `;
     $(document).ready(function () {
